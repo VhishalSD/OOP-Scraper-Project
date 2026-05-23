@@ -1,0 +1,19 @@
+# JetBrains IDE files
+.idea/
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Environment/config files
+.env
+
+# Temporary files
+tmp/
+temp/
+
+# Dependencies, if ever used
+vendor/
+node_modules/
