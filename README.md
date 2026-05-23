@@ -21,6 +21,7 @@ De focus van dit project ligt op het maken van een herbruikbare `Scraper` class.
 - `file_get_contents()`
 - HTML
 - CSS
+- JavaScript
 - Geen frameworks
 
 ## Bestandsstructuur
@@ -32,6 +33,10 @@ OOP-Scraper-Project/
 ├── Reflectie-Retrospectief.md
 ├── classes/
 │   └── Scraper.php
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
 └── screenshots/
     ├── 01-Trello.png
     ├── 02-Homepage.png
@@ -53,6 +58,14 @@ Dit is de hoofdpagina van het project. Hier wordt de `Scraper` class ingeladen, 
 ### `classes/Scraper.php`
 
 Dit bestand bevat de scraping-logica. De class haalt de KNMI-pagina's op, zoekt de luchtvaartinformatie en geeft deze terug als tekst.
+
+### `css/style.css`
+
+Dit bestand bevat alle styling van de webpagina. Hierdoor blijft de styling gescheiden van de HTML en PHP in `index.php`.
+
+### `js/script.js`
+
+Dit bestand bevat de JavaScript voor de refresh-knop. De knop herlaadt de pagina, zodat de KNMI-data opnieuw live wordt opgehaald.
 
 ### `Reflectie-Retrospectief.md`
 
@@ -102,7 +115,7 @@ htmlspecialchars()
 
 Hierdoor wordt de opgehaalde tekst netjes en veilig in de browser getoond.
 
-De refresh-knop gebruikt:
+De refresh-knop staat in `index.php`, maar de JavaScript-logica staat apart in `js/script.js`.
 
 ```javascript
 window.location.reload();

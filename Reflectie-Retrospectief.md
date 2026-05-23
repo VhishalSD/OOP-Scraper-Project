@@ -10,7 +10,7 @@ Tijdens dit project heb ik een kleine OOP-scraper gemaakt in PHP. Het doel was o
 
 ### Wat ging goed?
 
-Ik heb de projectstructuur netjes opgezet met `index.php` en een aparte `classes/Scraper.php`. De scraping-logica staat daardoor niet door de HTML heen, maar in een eigen class. Ook heb ik de drie onderdelen van de opdracht verwerkt: algemeen luchtvaartweer, TAF-informatie en METAR-informatie. De data wordt live opgehaald en overzichtelijk weergegeven in drie kaarten.
+Ik heb de projectstructuur netjes opgezet met `index.php`, een aparte `classes/Scraper.php`, een `css/style.css` bestand en een `js/script.js` bestand. Hierdoor zijn PHP/HTML, styling, JavaScript en de OOP-scrapinglogica duidelijk van elkaar gescheiden. Ook heb ik de drie onderdelen van de opdracht verwerkt: algemeen luchtvaartweer, TAF-informatie en METAR-informatie. De data wordt live opgehaald en overzichtelijk weergegeven in drie kaarten.
 
 ### Wat heb ik geleerd?
 
@@ -28,4 +28,4 @@ In het begin stond de data niet direct goed op de pagina, omdat de KNMI-tekst ni
 
 ### Conclusie
 
-Dit project is klein, maar laat goed zien dat ik OOP kan toepassen in PHP. Ik heb een herbruikbare `Scraper` class gemaakt, live data opgehaald van een externe bron, foutafhandeling getest en de output netjes weergegeven in een responsive webpagina.
+Dit project is klein, maar laat goed zien dat ik OOP kan toepassen in PHP. Ik heb een herbruikbare `Scraper` class gemaakt, live data opgehaald van een externe bron, foutafhandeling getest en de output netjes weergegeven in een responsive webpagina. Daarnaast heb ik de styling en JavaScript apart gezet, zodat de projectstructuur overzichtelijker en professioneler is.
